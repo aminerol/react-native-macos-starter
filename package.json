@@ -3,15 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "mac": "react-native run-macos",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.71.14"
+    "react-native": "0.71.14",
+    "react-native-macos": "^0.71.36"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
