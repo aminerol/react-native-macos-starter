@@ -14,6 +14,8 @@
 		86BBD22B2B288F240008F2A7 /* WindowWithDeallocCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BBD22A2B288F240008F2A7 /* WindowWithDeallocCallback.m */; };
 		86BBD22F2B288FED0008F2A7 /* WindowNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BBD22E2B288FED0008F2A7 /* WindowNavigator.m */; };
 		86BBD2322B2890370008F2A7 /* WindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BBD2312B2890370008F2A7 /* WindowManager.m */; };
+		86BBD2372B2892880008F2A7 /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BBD2362B2892880008F2A7 /* RootView.m */; };
+		86BBD2392B2892AA0008F2A7 /* RootViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BBD2382B2892AA0008F2A7 /* RootViewManager.m */; };
 		BF6D3040C630DF43FF006EAD /* libPods-shortsGenApp-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C42AD9ADDBD7A4B4C0C9104 /* libPods-shortsGenApp-macOS.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,10 @@
 		86BBD22E2B288FED0008F2A7 /* WindowNavigator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowNavigator.m; sourceTree = "<group>"; };
 		86BBD2302B28901D0008F2A7 /* WindowManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowManager.h; sourceTree = "<group>"; };
 		86BBD2312B2890370008F2A7 /* WindowManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowManager.m; sourceTree = "<group>"; };
+		86BBD2342B28924C0008F2A7 /* RootViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewManager.h; sourceTree = "<group>"; };
+		86BBD2352B28926C0008F2A7 /* RootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		86BBD2362B2892880008F2A7 /* RootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		86BBD2382B2892AA0008F2A7 /* RootViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewManager.m; sourceTree = "<group>"; };
 		8F5F9B7694576932B2ACB13C /* Pods-shortsGenApp-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shortsGenApp-macOS.release.xcconfig"; path = "Target Support Files/Pods-shortsGenApp-macOS/Pods-shortsGenApp-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		E69271C8FBEFA55555EEF7C4 /* Pods-shortsGenApp-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shortsGenApp-macOS.debug.xcconfig"; path = "Target Support Files/Pods-shortsGenApp-macOS/Pods-shortsGenApp-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -79,6 +85,7 @@
 		5142014A2437B4B30078DB4F /* shortsGenApp-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				86BBD2332B28922F0008F2A7 /* RootView */,
 				86BBD2292B288EF60008F2A7 /* WindowManager */,
 				5142014B2437B4B30078DB4F /* AppDelegate.h */,
 				5142014C2437B4B30078DB4F /* AppDelegate.mm */,
@@ -132,6 +139,17 @@
 				86BBD2312B2890370008F2A7 /* WindowManager.m */,
 			);
 			path = WindowManager;
+			sourceTree = "<group>";
+		};
+		86BBD2332B28922F0008F2A7 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				86BBD2342B28924C0008F2A7 /* RootViewManager.h */,
+				86BBD2352B28926C0008F2A7 /* RootView.h */,
+				86BBD2362B2892880008F2A7 /* RootView.m */,
+				86BBD2382B2892AA0008F2A7 /* RootViewManager.m */,
+			);
+			path = RootView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,11 +374,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86BBD2372B2892880008F2A7 /* RootView.m in Sources */,
 				514201582437B4B40078DB4F /* main.m in Sources */,
 				5142014D2437B4B30078DB4F /* AppDelegate.mm in Sources */,
 				86BBD22B2B288F240008F2A7 /* WindowWithDeallocCallback.m in Sources */,
 				86BBD2322B2890370008F2A7 /* WindowManager.m in Sources */,
 				86BBD22F2B288FED0008F2A7 /* WindowNavigator.m in Sources */,
+				86BBD2392B2892AA0008F2A7 /* RootViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
