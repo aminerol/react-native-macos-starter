@@ -1,5 +1,5 @@
 import {requireNativeComponent, ViewProps} from 'react-native';
-import {WindowStyleMask} from '../modules/WindowManager';
+import {WindowStyleMask} from 'modules/WindowManager';
 
 const RootView = requireNativeComponent<
   ViewProps & {
