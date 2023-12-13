@@ -11,7 +11,9 @@
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
-  return [super applicationDidFinishLaunching:notification];
+  [super applicationDidFinishLaunching:notification];
+  
+  [self.window setFrame:NSMakeRect(0, 0, 0, 0) display:YES];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
